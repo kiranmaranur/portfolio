@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiran Kumar MM - Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="100" tabindex="0">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Kiran Kumar MM</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="text-center py-5 home-section text-white">
+    <div class="overlay py-5">
+      <div class="container">
+        <h1 class="display-4 fw-bold">Hi, I'm <span class="highlight">Kiran Kumar MM</span></h1>
+        <p class="lead mt-3">QA Tester & Full Stack Developer | Building Reliable and Efficient Software Solutions</p>
+        <a href="Document/Kiran.pdf" class="btn btn-warning btn-lg mt-3" target="_blank">
+          <i class="fa-solid fa-download me-2"></i>Download CV
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 about-section">
+    <div class="container">
+      <h2 class="mb-4 text-center">About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+          <img id="profileImg" src="image/Kiran.jpeg" alt="Profile" class="rounded-circle img-fluid shadow-lg border border-3 border-warning">
+        </div>
+        <div class="col-md-8">
+          <p>Accomplished QA Tester with extensive experience in developing trade and supply chain finance systems, achieving a 30% increase in transaction efficiency. Proficient in Python, SQL, and Agile methodologies, with demonstrated skills in API validation and software integrity assurance, delivering high-quality solutions through detailed testing and effective cross-functional collaboration.</p>
+          <div class="mt-3">
+            <i class="fa-brands fa-python fa-2x me-2"></i>
+            <i class="fa-brands fa-js fa-2x me-2"></i>
+            <i class="fa-brands fa-html5 fa-2x me-2"></i>
+            <i class="fa-brands fa-react fa-2x me-2"></i>
+            <i class="fa-solid fa-database fa-2x me-2"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+<section id="skills" class="py-5 gradient-skills">
+  <div class="container">
+    <h2 class="mb-4 text-center text-black">Skills</h2>
+    <div class="row g-4 justify-content-center">
+
+      <!-- Skill Cards -->
+      <div class="col-md-4 col-6">
+        <div class="card skill-card p-3 text-center">
+          <i class="fa-brands fa-python"></i>
+          <span>Python, C++, C, Java</span>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-6">
+        <div class="card skill-card p-3 text-center">
+          <i class="fa-brands fa-js"></i>
+          <span>JavaScript, TypeScript</span>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-6">
+        <div class="card skill-card p-3 text-center">
+          <i class="fa-brands fa-html5"></i>
+          <span>HTML, CSS, Bootstrap</span>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-6">
+        <div class="card skill-card p-3 text-center">
+          <i class="fa-brands fa-react"></i>
+          <span>React.js, Angular, Vue.js</span>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-6">
+        <div class="card skill-card p-3 text-center">
+          <i class="fa-solid fa-database"></i>
+          <span>SQL, NoSQL, MongoDB</span>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-6">
+        <div class="card skill-card p-3 text-center">
+          <i class="fa-solid fa-code"></i>
+          <span>VS Code, Git, Postman, Selenium, Cypress</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Circular Progress Section -->
+    <h2 class="mt-5 mb-4 text-center text-black">Languages & Tools Proficiency</h2>
+    <div class="row g-4 justify-content-center">
+
+      <!-- Python -->
+      <div class="col-6 col-md-3 text-center">
+        <div class="circular-progress" data-percentage="90">
+          <svg width="120" height="120">
+            <circle class="bg" cx="60" cy="60" r="54"></circle>
+            <circle class="progress" cx="60" cy="60" r="54"></circle>
+          </svg>
+          <div class="icon"><i class="fa-brands fa-python"></i></div>
+          <p>Python</p>
+        </div>
+      </div>
+
+      <!-- Java -->
+      <div class="col-6 col-md-3 text-center">
+        <div class="circular-progress" data-percentage="85">
+          <svg width="120" height="120">
+            <circle class="bg" cx="60" cy="60" r="54"></circle>
+            <circle class="progress" cx="60" cy="60" r="54"></circle>
+          </svg>
+          <div class="icon"><i class="fa-brands fa-java"></i></div>
+          <p>Java</p>
+        </div>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="col-6 col-md-3 text-center">
+        <div class="circular-progress" data-percentage="80">
+          <svg width="120" height="120">
+            <circle class="bg" cx="60" cy="60" r="54"></circle>
+            <circle class="progress" cx="60" cy="60" r="54"></circle>
+          </svg>
+          <div class="icon"><i class="fa-brands fa-js"></i></div>
+          <p>JavaScript</p>
+        </div>
+      </div>
+
+      <!-- SQL -->
+      <div class="col-6 col-md-3 text-center">
+        <div class="circular-progress" data-percentage="85">
+          <svg width="120" height="120">
+            <circle class="bg" cx="60" cy="60" r="54"></circle>
+            <circle class="progress" cx="60" cy="60" r="54"></circle>
+          </svg>
+          <div class="icon"><i class="fa-solid fa-database"></i></div>
+          <p>SQL</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-5 experience-section">
+    <div class="container">
+      <h2 class="mb-4 text-center">Experience</h2>
+      <div class="row g-4">
+
+        <div class="col-md-6">
+          <div class="card experience-card shadow-lg p-3">
+            <div class="d-flex align-items-center mb-2">
+              <i class="fa-solid fa-briefcase fa-lg me-2 text-primary"></i>
+              <h5 class="mb-0">QA Tester – Kyzer Software (I) Pvt. Ltd.</h5>
+            </div>
+            <small>Jul 2024 – Present | Pune, India</small>
+            <ul class="mt-2">
+              <li>Contributed to trade & supply chain finance systems with RBI integration.</li>
+              <li>Conducted manual & automated testing, ensuring quality delivery.</li>
+              <li>Validated RESTful APIs & SQL-based database testing.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card experience-card shadow-lg p-3">
+            <div class="d-flex align-items-center mb-2">
+              <i class="fa-solid fa-briefcase fa-lg me-2 text-primary"></i>
+              <h5 class="mb-0">Full Stack Developer (Intern) – Teachnook</h5>
+            </div>
+            <small>Aug 2023 – Nov 2023 | Remote</small>
+            <ul class="mt-2">
+              <li>Built responsive web apps with React.js, Angular, and JS frameworks.</li>
+              <li>Improved database speed by 20% using SQL & NoSQL optimization.</li>
+              <li>Developed reusable UI components, cutting dev time by 30%.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5 projects-section">
+    <div class="container">
+      <h2 class="mb-4 text-center">Projects</h2>
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card project-card shadow-lg p-3 text-center">
+            <i class="fa-solid fa-diagram-project fa-2x mb-2 text-primary"></i>
+            <h6>Decentralized Voting System</h6>
+            <p>Blockchain security project for transparent voting</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card project-card shadow-lg p-3 text-center">
+            <i class="fa-solid fa-diagram-project fa-2x mb-2 text-primary"></i>
+            <h6>Vidhya Vihar Management System</h6>
+            <p>Education platform for school management</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card project-card shadow-lg p-3 text-center">
+            <i class="fa-solid fa-diagram-project fa-2x mb-2 text-primary"></i>
+            <h6>Library Management System</h6>
+            <p>Catalog & inventory management system</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card project-card shadow-lg p-3 text-center">
+            <i class="fa-solid fa-diagram-project fa-2x mb-2 text-primary"></i>
+            <h6>Mobile Attendance System</h6>
+            <p>Android app for real-time tracking</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card project-card shadow-lg p-3 text-center">
+            <i class="fa-solid fa-diagram-project fa-2x mb-2 text-primary"></i>
+            <h6>Pizza Bill Generator</h6>
+            <p>Core Java OOP billing system</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card project-card shadow-lg p-3 text-center">
+            <i class="fa-solid fa-diagram-project fa-2x mb-2 text-primary"></i>
+            <h6>Personal Portfolio Website</h6>
+            <p>HTML, CSS, JS portfolio design</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-5 education-section">
+    <div class="container">
+      <h2 class="mb-4 text-center">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <i class="fa-solid fa-graduation-cap text-primary me-2"></i>
+          <h5>B.Sc. in Computer Science & Engineering</h5>
+          <small>Dayananda Sagar Academy | CGPA: 8.2 | Jun 2024</small>
+        </div>
+        <div class="timeline-item">
+          <i class="fa-solid fa-graduation-cap text-primary me-2"></i>
+          <h5>Diploma in Computer Science</h5>
+          <small>KLE Society’s Polytechnic | Percentage: 74.8% | Jun 2021</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="py-5 achievements-section">
+    <div class="container">
+      <h2 class="mb-4 text-center">Achievements</h2>
+      <ul class="list-unstyled">
+        <li><i class="fa-solid fa-trophy text-warning me-2"></i>Led national-level sports team, securing top positions through leadership & teamwork.</li>
+        <li><i class="fa-solid fa-hand-holding-heart text-warning me-2"></i>Contributed to Rural Development Program with Avisa Charitable Trust, improving access to services by 30%.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 contact-section">
+    <div class="container text-center">
+      <h2 class="mb-4">Contact</h2>
+      <p><i class="fa-solid fa-phone me-2"></i> +91 9110234935</p>
+      <p><i class="fa-solid fa-envelope me-2"></i> <a href="mailto:kiranmaranur28765@gmail.com">kiranmaranur28765@gmail.com</a></p>
+      <p><i class="fa-solid fa-location-dot me-2"></i> Jamkhandi, Bagalkot, Karnataka</p>
+      <p><i class="fa-brands fa-linkedin me-2"></i> <a href="https://www.linkedin.com/in/kiran-kumar-m-m-008936245" target="_blank">linkedin.com/in/kiran-kumar-m-m-008936245</a></p>
+      <div class="mt-4">
+        <a href="https://github.com/kiranmaranur" target="_blank" class="me-3"><i class="fa-brands fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/kiran-kumar-m-m-008936245" target="_blank" class="me-3"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <button id="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
