@@ -1,0 +1,7 @@
+.contact-section a {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.contact-section a:hover {
+  color: #facc15; /* yellow highlight */
+  transform: translateY(-3px);
+}

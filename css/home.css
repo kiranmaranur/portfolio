@@ -1,0 +1,172 @@
+/* ================= Home Section ================= */
+.home-section {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: transparent;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+  color: #fff;
+}
+
+.home-section h1 {
+  font-size: 2.5rem;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.home-section p.lead {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.6s;
+}
+
+/* ================= Highlight / Typed.js ================= */
+.highlight {
+  background: linear-gradient(90deg, #ffb400, #ffaa00, #ffffff);
+  background-clip: text;          /* Standard property (Firefox supports this) */
+  -webkit-background-clip: text;  /* WebKit/Chrome/Safari support */
+  -webkit-text-fill-color: transparent; /* Needed to actually show the gradient inside text */
+}
+
+@keyframes gradientText {
+  0% { background-position: 0% center; }
+  100% { background-position: 300% center; }
+}
+
+.highlight::after {
+  content: '|';
+  animation: blink 1s infinite;
+  color: #ffb400;
+}
+
+/* ================= Home Buttons ================= */
+.btn-warning {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(90deg, #ffb400 0%, #ffaa00 100%);
+  color: #111;
+  border: none;
+  transition: all 0.4s ease;
+  animation: fadeInUp 1s ease forwards, pulse 2s infinite;
+  animation-delay: 0.9s;
+}
+
+.btn-warning::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 0.4s ease;
+}
+
+.btn-warning:hover::before {
+  left: 100%;
+}
+
+.btn-warning:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 20px #ffb400, 0 0 40px #ffaa00;
+}
+
+/* Pulse animation for CV button */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 180, 0, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(255, 180, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 180, 0, 0);
+  }
+}
+
+/* ================= Social Icons ================= */
+.social-icons {
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 1.2s;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.8rem;
+  transition: transform 0.4s ease, color 0.4s ease, text-shadow 0.4s ease;
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+}
+
+.social-icons a:nth-child(2) { animation-delay: 0.3s; }
+.social-icons a:nth-child(3) { animation-delay: 0.6s; }
+
+.social-icons a:hover {
+  color: #ffb400;
+  transform: translateY(-5px) scale(1.25) rotate(-5deg);
+  text-shadow: 0 0 10px rgba(255, 180, 0, 0.8);
+}
+
+/* Floating animation for social icons */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* ================= Gradient Overlay ================= */
+.home-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 180, 0, 0.2), rgba(0, 0, 0, 0.5));
+  z-index: 0;
+}
+
+/* Shape Background */
+.shape-bg {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255,180,0,0.3), transparent 70%);
+  top: 20%;
+  left: -10%;
+  filter: blur(80px);
+  z-index: 1; /* Above particles */
+}
+
+/* Overlay Dark Gradient */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 180, 0, 0.2), rgba(0, 0, 0, 0.6));
+  z-index: 2; /* Above shape + particles */
+}
+
+/* ================= Responsive Adjustments ================= */
+@media (min-width: 1200px) {
+  .home-section h1 { font-size: 4rem; }
+  .home-section p.lead { font-size: 1.3rem; }
+}
+/* Remove unwanted margin/padding */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure navbar sticks and no extra spacing */
+.navbar {
+  margin-bottom: -20px !important;
+}
+
+/* Home section starts right under navbar */
+.home-section {
+  margin-top: -40px !important;
+  padding-top: 60px; /* adjust if navbar overlaps text */
+}

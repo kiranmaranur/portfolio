@@ -1,0 +1,61 @@
+/* ================= About Section ================= */
+.about-section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #facc15;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.about-section p {
+  line-height: 1.7;
+  font-size: 1.1rem;
+  color: #ddd;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.profile-img-wrapper {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* ================= About Section Skill Icons ================= */
+@keyframes floatRotateShadow {
+  0%, 100% { transform: translateY(0) rotate(0deg); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+  25% { transform: translateY(-3px) rotate(-2deg); box-shadow: 0 6px 12px rgba(0,0,0,0.25); }
+  50% { transform: translateY(-5px) rotate(2deg); box-shadow: 0 8px 15px rgba(0,0,0,0.3); }
+  75% { transform: translateY(-3px) rotate(-1deg); box-shadow: 0 6px 12px rgba(0,0,0,0.25); }
+}
+
+.skill-icon {
+  background: #fff;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 15px rgba(250, 202, 21, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  z-index: 1;
+  animation: floatRotateShadow 3s ease-in-out infinite;
+}
+
+.skill-icon:nth-child(1) { animation-delay: 0s; }
+.skill-icon:nth-child(2) { animation-delay: 0.3s; }
+.skill-icon:nth-child(3) { animation-delay: 0.6s; }
+.skill-icon:nth-child(4) { animation-delay: 0.9s; }
+.skill-icon:nth-child(5) { animation-delay: 1.2s; }
+
+.skill-icon i {
+  display: block;
+  font-size: 2rem;
+  transition: transform 0.4s ease;
+}
+
+.skill-icon:hover {
+  transform: scale(1.4) rotate(0deg);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+  z-index: 2;
+}
